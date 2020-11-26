@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">AwesomeProject</string>
+    <string name="invalid_serial_number">Invalid Serial Number</string>
+    <string name="invalid_pairing_key">Invalid Pairing Key</string>
+    <string name="could_not_pair">Unable to pair device</string>
+    <string name="device_request_failed">Device access request failed</string>
+</resources>

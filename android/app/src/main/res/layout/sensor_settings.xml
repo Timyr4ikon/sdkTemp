@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:tools="http://schemas.android.com/tools"
+       xmlns:android="http://schemas.android.com/apk/res/android"
+       tools:showIn="@layout/activity_device_settings">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/MenuItem"
+                android:layout_gravity="left|center_vertical"
+                android:text="Sensor Name"
+                />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/sensorName"
+            style="@style/MenuItem"
+            android:layout_gravity="right|center_vertical"
+            android:imeOptions="actionDone"
+            android:inputType="textNoSuggestions"
+            android:maxLength="10"
+            android:text="Sensor" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Switch
+                android:id="@+id/highAlarmSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"/>
+            <TextView
+                style="@style/MenuItem"
+                android:layout_gravity="left|center_vertical"
+                android:text="High Alarm"
+                />
+
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/highAlarm"
+            style="@style/MenuItem"
+            android:layout_gravity="right|center_vertical"
+            android:imeOptions="actionDone"
+            android:inputType="numberDecimal"
+            android:text="22.2"
+            />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Switch
+                android:id="@+id/lowAlarmSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"/>
+            <TextView
+                style="@style/MenuItem"
+                android:layout_gravity="left|center_vertical"
+                android:text="Low Alarm"
+                />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/lowAlarm"
+            style="@style/MenuItem"
+            android:layout_gravity="right|center_vertical"
+            android:imeOptions="actionDone"
+            android:inputType="numberDecimal"
+            android:text="22.2"
+            />
+
+    </FrameLayout>
+
+</merge>
